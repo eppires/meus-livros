@@ -1,0 +1,170 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Impact', sans-serif; /* Fonte similar ao estilo do design */
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: 'Impact', sans-serif; /* Fonte similar ao estilo do design */
+}
+
+/* Botão de modo noturno */
+#modo-noturno {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 30px; /* Define o tamanho do botão */
+  height: 30px; /* Define o tamanho do botão */
+}
+
+/* Imagem da lua dentro do botão */
+#modo-noturno .icone-lua {
+  width: 100%; /* Adapta ao tamanho do botão */
+  height: 100%; /* Adapta ao tamanho do botão */
+  object-fit: contain; /* Garante que a imagem mantenha proporções */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.livro {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.capa-livro {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.livro h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.livro p {
+  margin: 5px 0;
+}
+
+.detalhes-btn {
+  padding: 10px 15px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.detalhes-btn:hover {
+  background-color: #333333;
+}
+
+/* Página flutuante */
+#pagina-flutuante {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#pagina-flutuante.visivel {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#detalhes-conteudo {
+  background: #222222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+}
+
+#fechar-detalhes {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Modo noturno */
+body.modo-noturno {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.modo-noturno header {
+  background-color: #333333;
+}
+
+body.modo-noturno .livro {
+  background-color: #444444;
+}
+
+body.modo-noturno .detalhes-btn {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.modo-noturno .detalhes-btn:hover {
+  background-color: #cccccc;
+}

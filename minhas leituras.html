@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Livros Favoritos</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adicionando o favicon -->
+    <link rel="icon" href="img/2280294.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>MEUS LIVROS FAVORITOS</h1>
+        <h2>Este site é uma lista dos livros favoritos de Elisama, com informações sobre os autores, datas de publicação, e entre outras.</h2>
+        <button id="modo-noturno" aria-label="Ativar modo noturno">
+            <img src="img/tl.webp" alt="Ativar modo noturno" class="icone-lua">
+        </button>
+    </header>
+    <main>
+        <section class="livro">
+            <img src="img/pachinko.jpg" alt="Capa do livro 1" class="capa-livro">
+            <h2>PACHINKO</h2>
+            <p>Autor: Min Jin Lee</p>
+            <button class="detalhes-btn">Mais detalhes</button>
+        </section>
+        <section class="livro">
+            <img src="img/a casa dos espiritos.jpg" alt="Capa do livro 2" class="capa-livro">
+            <h2>A CASA DOS ESPÍRITOS</h2>
+            <p>Autor: Isabel Allende</p>
+            <button class="detalhes-btn">Mais detalhes</button>
+        </section>
+        <section class="livro">
+            <img src="img/amor de rendeção.jpg" alt="Capa do livro 3" class="capa-livro">
+            <h2>AMOR DE REDENÇÃO</h2>
+            <p>Autor: Francine Rivers</p>
+            <button class="detalhes-btn">Mais detalhes</button>
+        </section>
+        <section class="livro">
+            <img src="img/battle royale.jpg" alt="Capa do livro 3" class="capa-livro">
+            <h2>BATTLE ROYALE</h2>
+            <p>Autor: Koushun Takami</p>
+            <button class="detalhes-btn">Mais detalhes</button>
+        </section>
+        <section class="livro">
+            <img src="img/ocaçador de pipas.jpg" alt="Capa do livro 3" class="capa-livro">
+            <h2>O CAÇADOR DE PIPAS</h2>
+            <p>Autor: Khaled Hosseini</p>
+            <button class="detalhes-btn">Mais detalhes</button>
+        </section>
+    </main>
+    <!-- Página flutuante -->
+    <div id="pagina-flutuante" class="oculto">
+        <button id="fechar-detalhes" aria-label="Fechar detalhes">Fechar</button>
+        <div id="detalhes-conteudo">
+            <!-- Detalhes do livro serão inseridos aqui dinamicamente -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
